@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".jadwal_main"
+    android:id="@+id/main">
+
+    <!-- Navbar -->
+    <RelativeLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_navbar"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:elevation="6dp">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/backbtn"
+            android:contentDescription="Profile Picture"
+            android:background="@drawable/circle_background"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/navbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Jadwal Main"
+            android:textColor="#3B3C3D"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/backBtn"
+            android:layout_marginTop="6dp"/>
+
+        <ImageView
+            android:id="@+id/menuIcon4"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/opsi"
+            android:contentDescription="Menu Icon"
+            android:layout_marginEnd="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="6dp"
+            />
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/navbarTitle"
+            android:text="logout"
+            android:layout_alignParentEnd="true"
+            android:background="#ffeaa7"
+            android:visibility="gone"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewJadwal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:listitem="@layout/item_booking" />
+
+</LinearLayout>

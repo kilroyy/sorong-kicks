@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#F5F5F5"
+    tools:context=".input_sewa_lapangan"
+    android:id="@+id/main">
+
+    <!-- Navbar -->
+    <RelativeLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_navbar"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:elevation="6dp">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/backbtn"
+            android:contentDescription="Profile Picture"
+            android:background="@drawable/circle_background"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/navbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pilih Lapangan"
+            android:textColor="#3B3C3D"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/backBtn"
+            android:layout_marginTop="6dp"/>
+
+        <ImageView
+            android:id="@+id/menuIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/opsi"
+            android:contentDescription="Menu Icon"
+            android:layout_marginEnd="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="6dp"
+            />
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/navbarTitle"
+            android:text="logout"
+            android:layout_alignParentEnd="true"
+            android:background="#ffeaa7"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <!-- Lapangan 1 -->
+    <LinearLayout
+        android:id="@+id/lapangan1Container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navbar"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageLapangan1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/lapangan1"
+            android:contentDescription="Gambar Lapangan 1"
+            android:background="@drawable/rounded_image_background"
+            android:clipToOutline="true" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/description1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nomor Lapangan : 1"
+                android:textColor="#3B3C3D"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+            <TextView
+                android:id="@+id/description2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Panjang : 30 m"
+                android:textColor="#3B3C3D"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+            <TextView
+                android:id="@+id/description3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lebar : 20 m"
+                android:textColor="#3B3C3D"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+            <TextView
+                android:id="@+id/description4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tinggi Jaring : 8 m"
+                android:textColor="#3B3C3D"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+            <TextView
+                android:id="@+id/description5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumlah Bola : 2"
+                android:textColor="#3B3C3D"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonBooking1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Booking"
+                    android:background="@drawable/rounded_button"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginEnd="8dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Lapangan 2 -->
+    <LinearLayout
+        android:id="@+id/lapangan2Container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lapangan1Container"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageLapangan2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/lapangan2"
+            android:contentDescription="Gambar Lapangan 2"
+            android:background="@drawable/rounded_image_background"
+            android:clipToOutline="true" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/description6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nomor Lapangan : 2"
+                android:textColor="#3B3C3D"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+            <TextView
+                android:id="@+id/description7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Panjang : 30 m"
+                android:textColor="#3B3C3D"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+            <TextView
+                android:id="@+id/description8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lebar : 20 m"
+                android:textColor="#3B3C3D"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+            <TextView
+                android:id="@+id/description9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tinggi Jaring : 8 m"
+                android:textColor="#3B3C3D"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+            <TextView
+                android:id="@+id/description10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumlah Bola : 2"
+                android:textColor="#3B3C3D"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonBooking2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Booking"
+                    android:background="@drawable/rounded_button"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginEnd="8dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Lapangan 3 -->
+    <LinearLayout
+        android:id="@+id/lapangan3Container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lapangan2Container"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageLapangan3"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/lapangan3"
+            android:contentDescription="Gambar Lapangan 3"
+            android:background="@drawable/rounded_image_background"
+            android:clipToOutline="true" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/description11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nomor Lapangan : 3"
+                android:textColor="#3B3C3D"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+            <TextView
+                android:id="@+id/description12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Panjang : 30 m"
+                android:textColor="#3B3C3D"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+            <TextView
+                android:id="@+id/description13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lebar : 20 m"
+                android:textColor="#3B3C3D"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+            <TextView
+                android:id="@+id/description14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tinggi Jaring : 8 m"
+                android:textColor="#3B3C3D"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+            <TextView
+                android:id="@+id/description15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumlah Bola : 2"
+                android:textColor="#3B3C3D"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonBooking3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Booking"
+                    android:background="@drawable/rounded_button"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginEnd="8dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

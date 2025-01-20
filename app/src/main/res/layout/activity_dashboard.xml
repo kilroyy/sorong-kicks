@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#F5F5F5"
+    tools:context=".Dashboard"
+    android:id="@+id/main">
+
+    <!-- Navbar (Bagian Atas) -->
+    <RelativeLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_navbar"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="8dp"
+        android:elevation="6dp"
+        android:paddingBottom="10dp">
+
+        <!-- Foto Profil -->
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/profil"
+            android:contentDescription="Profile Picture"
+            android:background="@drawable/circle_background"
+            android:padding="4dp"
+            android:layout_marginTop="13dp"/>
+
+        <!-- Judul Navbar -->
+        <TextView
+            android:id="@+id/navbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dashboard"
+            android:textColor="#3B3C3D"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/profileImage"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Ikon Menu -->
+        <ImageView
+            android:id="@+id/menuIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/opsi"
+            android:contentDescription="Menu Icon"
+            android:layout_marginEnd="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/navbarTitle"
+            android:text="logout"
+            android:layout_alignParentEnd="true"
+            android:background="#ffeaa7"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+
+    <!-- Kartu sebelah kiri -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/leftCard"
+        android:layout_width="190dp"
+        android:layout_height="400dp"
+        android:layout_below="@id/navbar"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="10dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sewa_lapangan" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sewa Lapangan"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:padding="8dp" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Kartu sebelah kanan -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rightCard"
+        android:layout_width="190dp"
+        android:layout_height="400dp"
+        android:layout_below="@id/navbar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/waktu_main" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Jadwal Main"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:padding="8dp" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView di bagian bawah -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bottomContainer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/leftCard"
+        android:layout_margin="18dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp">
+
+        <!-- ImageView bagian atas -->
+        <ImageView
+            android:id="@+id/bottomImageView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="top"
+            android:src="@drawable/gambar_lapangan"
+            android:contentDescription="Gambar Alamat Lapangan"
+            android:scaleType="centerCrop" />
+
+        <!-- TextView bagian bawah -->
+        <TextView
+            android:id="@+id/bottomText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:text="Alamat: 4872+CHH, Malaingkedi, Sorong Utara, Sorong City, West Papua, 98412. Telepon : (0951) 326828"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:background="@color/green"
+            android:gravity="center_vertical|start"
+            android:padding="8dp" />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

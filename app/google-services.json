@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "107871751522",
+    "project_id": "sorongkicks",
+    "storage_bucket": "sorongkicks.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107871751522:android:b4eac657457512c596703b",
+        "android_client_info": {
+          "package_name": "com.bangkit.booking_futsal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9TFOtDEg_PkIuP6gXHWzbdtGcoXGBstQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107871751522:android:f97f0afe5bf8789a96703b",
+        "android_client_info": {
+          "package_name": "com.sorongnext.projectkedua"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9TFOtDEg_PkIuP6gXHWzbdtGcoXGBstQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

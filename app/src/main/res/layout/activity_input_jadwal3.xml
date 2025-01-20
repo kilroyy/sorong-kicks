@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#F5F5F5"
+    android:id="@+id/main"
+    tools:context=".input_jadwal3">
+
+    <!-- Navbar -->
+    <RelativeLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_navbar"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:elevation="6dp">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/backbtn"
+            android:contentDescription="Profile Picture"
+            android:background="@drawable/circle_background"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/navbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Jadwal dan Harga"
+            android:textColor="#3B3C3D"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/backBtn"
+            android:layout_marginTop="6dp"/>
+
+        <ImageView
+            android:id="@+id/menuIcon3"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/opsi"
+            android:contentDescription="Menu Icon"
+            android:layout_marginEnd="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="6dp"
+            />
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/navbarTitle"
+            android:text="logout"
+            android:layout_alignParentEnd="true"
+            android:background="#ffeaa7"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/navbar">
+
+        <!-- Foto Lapangan -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/darker_gray"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lapangan_3"/>
+
+        <!-- Nama Lapangan -->
+        <TextView
+            android:id="@+id/lapangan3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lapangan 3"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <!-- Pilih Jam Bermain -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Jam Bermain:"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/black"/>
+
+        <GridLayout
+            android:id="@+id/btnjadwal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:rowCount="4"
+            android:layout_gravity="center"
+            android:alignmentMode="alignMargins"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp">
+
+            <!-- Button untuk jam bermain -->
+            <Button
+                android:id="@+id/button_08"
+                android:text="08.00"
+                android:backgroundTint="@color/green" />
+
+            <Button
+                android:id="@+id/button_09"
+                android:text="09.00"
+                android:backgroundTint="@color/green" />
+
+            <Button
+                android:id="@+id/button_10"
+                android:text="10.00"
+                android:backgroundTint="@color/green" />
+
+            <Button
+                android:id="@+id/button_11"
+                android:text="11.00"
+                android:backgroundTint="@color/green" />
+
+            <Button
+                android:id="@+id/button_12"
+                android:text="12.00"
+                android:backgroundTint="@color/green" />
+
+            <Button
+                android:id="@+id/button_13"
+                android:text="13.00"
+                android:backgroundTint="@color/green" />
+
+            <Button
+                android:id="@+id/button_14"
+                android:text="14.00"
+                android:backgroundTint="@color/green" />
+
+            <Button
+                android:id="@+id/button_15"
+                android:text="15.00"
+                android:backgroundTint="@color/green" />
+
+            <Button
+                android:id="@+id/button_16"
+                android:text="16.00"
+                android:backgroundTint="@color/green" />
+
+            <Button
+                android:id="@+id/button_17"
+                android:text="17.00"
+                android:backgroundTint="@color/green" />
+
+            <Button
+                android:id="@+id/button_18"
+                android:text="18.00"
+                android:backgroundTint="@color/green" />
+
+            <Button
+                android:id="@+id/button_19"
+                android:text="19.00"
+                android:backgroundTint="@color/green" />
+
+            <Button
+                android:id="@+id/button_20"
+                android:text="20.00"
+                android:backgroundTint="@color/green" />
+
+            <Button
+                android:id="@+id/button_21"
+                android:text="21.00"
+                android:backgroundTint="@color/green" />
+
+            <Button
+                android:id="@+id/button_22"
+                android:text="22.00"
+                android:backgroundTint="@color/green" />
+
+            <Button
+                android:id="@+id/button_23"
+                android:text="23.00"
+                android:backgroundTint="@color/green" />
+        </GridLayout>
+
+
+        <!-- Harga -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harga: 120.000/jam"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/black"/>
+
+        <!-- Button Lanjut -->
+        <Button
+            android:id="@+id/lanjut3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            android:text="Lanjut"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_button"
+            android:layout_margin="16dp"/>
+    </LinearLayout>
+</RelativeLayout>
